@@ -4,13 +4,60 @@
     <meta charset="utf-8">
     <title>Contact</title>
   </head>
-  <body style="text-align:center">
-    <h2>Contact</h2>
-    <p><strong>ที่อยู่ : </strong>9 อาคารDiamond Place อำเภอปากเกร็ด ตำบลบางตลาด จังหวัดนนทบุรี 11120  </p>
-    <p><strong>เบอร์ : </strong> 0842191195 </p>
-    <a href="https://web.facebook.com/ptnsngc/"><img src="https://camo.githubusercontent.com/8f245234577766478eaf3ee72b0615e99bb9ef3eaa56e1c37f75692811181d5c/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f66616365626f6f6b2e737667" alt="Facebook" width="80"></a>
+  <style media="screen">
+    table,h3{
+      padding-left: 700px;
+    }.groupBtn{
+      padding-left: 865px;
+    }
+  </style>
+  <body>
+    <h2 style="text-align:center">Contact</h2>
+    <table>
+      <tr>
+        <td><strong>ที่อยู่ : </strong></td>
+        <td>9 อาคารDiamond Place อำเภอปากเกร็ด ตำบลบางตลาด จังหวัดนนทบุรี 11120</td>
+      </tr>
+      <tr>
+        <td><strong>เบอร์ : </strong> </td>
+        <td>0842191195</td>
+      </tr>
+      <tr>
+        <td><strong>Email : </strong> </td>
+        <td>6352300430@pim.stu.ac.th</td>
+      </tr>
+    </table>
+    <hr>
+    <h3>ติดต่อฉัน</h3>
+    <form id="Form1" class="" action="mailto:2001.phuphu@gmail.com" method="post" enctype="text/plain">
+    <table>
+      <tr>
+        <td><strong>ชื่อ-สกุล : </strong></td>
+        <td><input type="text" name="name_surname" placeholder="ชื่อ - สกุล" value=""></td>
+      </tr>
+      <tr>
+        <td><strong>Email : </strong> </td>
+        <td> <input type="email" name="email" placeholder="EMAIL" value=""> </td>
+      </tr>
+      <tr>
+        <td><strong>ข้อความที่ต้องการส่ง : </strong> </td>
+        <td> <textarea name="message" rows="8" cols="80"></textarea> </td>
+      </tr>
+    </table>
     <br>
     <br/>
-    <a href="index.html"><button type="button" style="background-color:black; color:white; width:60px; height:40px; font-size:18px;"  name="button">กลับ</button></a>
+    <div class="groupBtn">
+      <button type="submit" onclick="btnSubmit()" name="button" style="background-color:green; color:white; width:70px; height:40px; font-size:18px;" >submit</button>
+      <a href="index.html"><button type="button" style="background-color:black; color:white; width:60px; height:40px; font-size:18px;"  name="button">กลับ</button></a>
+    </div>
+    </form>
+    <script type="text/javascript">
+    function btnSubmit() {
+              alert("Success!!");
+              document.getElementById("name").value = "";
+              document.getElementById("email").value = "";
+              document.getElementById("msg").value = "";
+    }
+    </script>
   </body>
 </html>
