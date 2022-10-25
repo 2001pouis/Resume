@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" style="background-color:#f4a7bb">
+<html lang="en" dir="ltr">
   <head>
     <meta charset = " UTF - 8 "/>
     <title> This is Phuthanet Sangachat </title>
   </head>
   <style media="screen">
+  body {
+  background-image: url("bgwebear.jpg");
+  background-repeat: no-repeat;
+  background-size: 1540px 760px;
+  font-family: Noto Sans Thai;
+ }
   #rowth{
     background-color: #333;
     color: #fff;
@@ -15,26 +21,51 @@
   .line{
     border-style:dotted;
   }
+  .buttongroup{
+    position: absolute;
+    top: 130px;
+    left:940px;
+  }
+  .aboutme{
+    background-color: white;
+    border: 5px solid #757575;
+    border-radius: 25px;
+    padding: 20px;
+  }
+  #details{
+    background-color: white;
+    border: 5px solid #757575;
+    border-radius: 25px;
+    padding: 2px 2px 1px 25px;
+    margin-left:50px;
+    margin-right:1040px;
+  }
   </style>
   <body>
+    <div class="buttongroup">
+    <a href="hello.html"><img src="BT1.png" alt="HOME"></a>
+    <a href="index.html"><img src="BT2.png" alt="ABOUT"></a>
+    <a href="contact.html"><img src="BT3.png" alt="CONTACT"></a>
+    </div>
     <br>
     <table cellspacing="60px"; >
       <tr>
         <td>
-          <img src="profile.jpg" border="5" style="border-radius: 50%;" alt="Phuthanet Sangachat" width="300" height="300">
+          <img src="profile.jpg" style="border-radius: 50%;border: 5px solid #424242;" alt="Phuthanet Sangachat" width="300" height="300">
         </td>
         <td>
+          <div class="aboutme">
           <h1>ภูธเนศ สง่าชาติ</h1>
           <p><em> สาขา วิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ </em></p>
           <p> คณะ วิศวกรรมกรรมศาสตร์และเทคโนโลยี</p>
           <p><strong><a href="https://www.pim.ac.th/">สถาบันการจัดการปัญญาภิวัฒน์</a></strong></p>
           <p>ผมชื่อภูธเนศ สง่าชาติ ชื่อเล่นชื่อ ภู อยู่สาขา CAI</p>
+          </div>
       </td>
       </tr>
     </table>
     <br>
     <div id="details">
-    <hr class="line">
     <h3> ประสบการณ์การทำงาน</h3>
     <table border="2px" style="border-collapse: collapse;">
       <tr id="rowth">
@@ -73,7 +104,6 @@
     <td> <img src="Star.png" width="20px"> <img src="Star.png" width="20px"></td>
   </tr>
 </table>
-    <h3><a href="contact.html">ช่องทางการติดต่อ</a></h3>
     <h3><a href="WeeklyReport.html">Weekly Report</a></h3>
   </div>
   </body>

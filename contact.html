@@ -1,17 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" style="background-color:#f4a7bb">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Contact</title>
   </head>
   <style media="screen">
+  body{
+    background-image: url('bgwebear.jpg');
+    background-repeat: no-repeat;
+    background-size: 1540px 760px;
+    font-family: Noto Sans Thai;
+  }
     table,h3{
-      padding-left: 700px;
+      padding-left: 20px;
     }.groupBtn{
-      padding-left: 865px;
+      padding-left: 720px;
+    }.buttongroup{
+      padding-left:570px;
+    }
+    .contactme{
+      background-color: white;
+      border: 5px solid #757575;
+      border-radius: 25px;
+      padding: 10px 0 20px 5px;
+      margin: 10px 400px 5px 420px;
+    }
+    .contactme2{
+      background-color: white;
+      border: 5px solid #757575;
+      border-radius: 25px;
+      padding: 10px 10px 20px 5px;
+      margin: 5px 360px 5px 380px;
     }
   </style>
   <body>
+    <div class="contactme">
     <h2 style="text-align:center">Contact</h2>
     <table>
       <tr>
@@ -27,7 +51,9 @@
         <td>6352300430@pim.stu.ac.th</td>
       </tr>
     </table>
-    <hr style="border-style:dotted;">
+    </div>
+    <br />
+    <div class="contactme2">
     <h3>ติดต่อฉัน</h3>
     <form id="Form1" class="" action="mailto:2001.phuphu@gmail.com" method="post" enctype="text/plain">
     <table>
@@ -44,11 +70,15 @@
         <td> <textarea name="message" rows="8" cols="80"></textarea> </td>
       </tr>
     </table>
-    <br>
-    <br/>
+    </div>
     <div class="groupBtn">
-      <button type="submit" onclick="btnSubmit()" name="button" style="background-color:green; color:white; width:70px; height:40px; font-size:18px;" >submit</button>
-      <a href="index.html"><button type="button" style="background-color:black; color:white; width:60px; height:40px; font-size:18px;"  name="button">กลับ</button></a>
+      <button type="submit" class="btn btn-success">SUBMIT</button>
+      <a href="index.html"><button type="button" class="btn btn-dark">BACK</button></a>
+    </div>
+    <div class="buttongroup">
+    <a href="hello.html"><img src="BT1.png" alt="HOME"></a>
+    <a href="index.html"><img src="BT2.png" alt="ABOUT"></a>
+    <a href="contact.html"><img src="BT3.png" alt="CONTACT"></a>
     </div>
     </form>
     <script type="text/javascript">
